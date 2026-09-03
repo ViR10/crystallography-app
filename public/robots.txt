@@ -1,0 +1,43 @@
+# Production robots.txt for CrystalloGraphy
+# https://crystallography.netlify.app/
+
+User-agent: *
+Allow: /
+Allow: /learn/fundamentals
+Allow: /learn/miller-indices
+Allow: /learn/crystal-planes
+Allow: /practice
+Allow: /practice/guided
+Allow: /practice/planes-guided
+Allow: /sandbox
+Allow: /mastery
+Allow: /about
+
+# Non-indexable student workspace and deleted legacy routes
+Disallow: /dashboard
+Disallow: /progress
+
+# AI Crawlers & Answer Engines explicit permission
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Canonical XML Sitemap
+Sitemap: https://crystallography.netlify.app/sitemap.xml

@@ -7,9 +7,6 @@ const DYNAMIC_CACHE = 'crystallography-dynamic-v2';
 const STATIC_ASSETS = [
     '/',
     '/index.html',
-    '/about.html',
-    '/styles.css',
-    '/script.js',
     '/app.webmanifest',
     '/robots.txt',
     '/icon-192.png',

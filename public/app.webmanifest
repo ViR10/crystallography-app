@@ -13,68 +13,28 @@
   "categories": ["education", "science", "productivity"],
   "icons": [
     {
-      "src": "icon-72.png",
+      "src": "/icon-72.png",
       "sizes": "72x72",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "icon-96.png",
+      "src": "/icon-96.png",
       "sizes": "96x96",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "icon-128.png",
-      "sizes": "128x128",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "icon-144.png",
-      "sizes": "144x144",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "icon-152.png",
-      "sizes": "152x152",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "icon-192.png",
+      "src": "/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "icon-384.png",
-      "sizes": "384x384",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "icon-512.png",
+      "src": "/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "screenshot1.png",
-      "sizes": "1280x720",
-      "type": "image/png",
-      "form_factor": "wide",
-      "label": "Miller indices practice interface"
-    },
-    {
-      "src": "screenshot2.png",
-      "sizes": "750x1334",
-      "type": "image/png",
-      "form_factor": "narrow",
-      "label": "Mobile practice view"
     }
   ],
   "shortcuts": [
@@ -82,15 +42,15 @@
       "name": "Start Practice",
       "short_name": "Practice",
       "description": "Jump to practice exercises",
-      "url": "/?page=practice",
-      "icons": [{ "src": "icon-96.png", "sizes": "96x96" }]
+      "url": "/practice",
+      "icons": [{ "src": "/icon-96.png", "sizes": "96x96" }]
     },
     {
       "name": "About ViR Developers",
       "short_name": "About",
       "description": "About the team behind CrystalloGraphy",
-      "url": "/about.html",
-      "icons": [{ "src": "icon-96.png", "sizes": "96x96" }]
+      "url": "/about",
+      "icons": [{ "src": "/icon-96.png", "sizes": "96x96" }]
     }
   ],
   "related_applications": [],
