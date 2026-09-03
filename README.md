@@ -13,6 +13,16 @@
 </p>
 
 <p align="center">
+  <a href="https://crystallography.netlify.app">
+    <img src="https://img.shields.io/badge/Live_App-crystallography.netlify.app-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Demo on Netlify" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://crystallography.netlify.app"><strong>🌐 Launch App: https://crystallography.netlify.app</strong></a>
+</p>
+
+<p align="center">
   <a href="https://virdevelopers.netlify.app">ViR Developers</a> •
   <a href="https://adeelshahid.netlify.app">Adeel Shahid (Digital Profile)</a> •
   <a href="https://github.com/ViR10">GitHub (@ViR10)</a> •
