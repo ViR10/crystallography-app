@@ -129,8 +129,8 @@ export const LessonView: React.FC<LessonViewProps> = ({
       </div>
 
       {/* Main lesson layout */}
-      <div className="lesson-layout" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '30px' }}>
-        <div className="lesson-canvas-wrap" style={{ position: 'relative' }}>
+      <div className="lesson-layout">
+        <div className="lesson-canvas-wrap">
           <LessonCanvas
             type={currentStep.type}
             drawStatic={currentStep.drawStatic}
@@ -142,17 +142,7 @@ export const LessonView: React.FC<LessonViewProps> = ({
 
           {/* Interactive Live Controls Panel */}
           {isAnimated && (
-            <div className="live-controls-bar" style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: '12px',
-              padding: '12px',
-              background: 'var(--bg-input)',
-              border: '1px solid var(--border)',
-              borderRadius: '8px',
-              marginTop: '15px'
-            }}>
+            <div className="live-controls-bar">
               <button
                 className={`btn ${isPlaying ? 'btn-secondary' : 'btn-primary'}`}
                 style={{ padding: '8px 16px', fontSize: '13px', display: 'flex', alignItems: 'center', gap: '6px' }}

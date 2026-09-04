@@ -115,7 +115,7 @@ export const AboutView: React.FC = () => {
             <h2 className="about-section-title">Meet the Developer &amp; Organization</h2>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px', maxWidth: '900px', margin: '0 auto' }}>
+          <div className="about-team-grid">
             {/* Lead Developer Card */}
             <div className="about-team-card" style={{ textAlign: 'center' }}>
               <div className="about-team-logo" style={{ background: '#eff6ff', color: '#2563eb', border: '2px solid #bfdbfe' }}>AS</div>

@@ -232,11 +232,19 @@ export const CrystalCanvas: React.FC<CrystalCanvasProps> = ({
   return (
     <canvas
       ref={canvasRef}
+      className="crystal-canvas"
       width={MAIN_CONFIG.width}
       height={MAIN_CONFIG.height}
       onMouseDown={handleMouseDown}
       onTouchStart={handleTouchStart}
-      style={{ display: 'block', margin: '0 auto', background: 'transparent' }}
+      style={{
+        display: 'block',
+        margin: '0 auto',
+        background: 'transparent',
+        maxWidth: '100%',
+        height: 'auto',
+        touchAction: interactive ? 'none' : 'manipulation'
+      }}
     />
   );
 };

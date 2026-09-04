@@ -255,7 +255,7 @@ export const ExpertSandbox: React.FC<ExpertSandboxProps> = ({ onBack, track }) =
   }, []);
 
   return (
-    <div id="hub-sandbox" className="hub-sandbox" style={{ display: 'block', padding: '20px' }}>
+    <div id="hub-sandbox" className="hub-sandbox">
       <SeoHead
         title={seoData.sandbox.title}
         description={seoData.sandbox.description}
@@ -263,16 +263,16 @@ export const ExpertSandbox: React.FC<ExpertSandboxProps> = ({ onBack, track }) =
         keywords={seoData.sandbox.keywords}
         jsonLd={seoData.sandbox.jsonLd}
       />
-      <div className="sandbox-topbar" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <div className="sandbox-topbar">
         {onBack ? (
-          <button className="back-btn" onClick={onBack} style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px', background: 'transparent', border: '1px solid #cbd5e1', borderRadius: '6px', color: '#475569', fontWeight: '600', cursor: 'pointer' }}>
+          <button className="back-btn hub-back-btn" onClick={onBack}>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" width="16" height="16">
               <polyline points="15 18 9 12 15 6" />
             </svg>
             Back to roadmap
           </button>
         ) : (
-          <h2 style={{ margin: 0, fontSize: '24px', color: '#0f172a', fontWeight: '800' }}>Expert Sandbox</h2>
+          <h2 className="sandbox-main-heading">Expert Sandbox</h2>
         )}
         <div className="hub-breadcrumb" id="sandbox-breadcrumb">Hub → {activeModule === 'planes' ? 'Planes' : 'Directions'} → Expert Sandbox</div>
       </div>
@@ -331,8 +331,8 @@ export const ExpertSandbox: React.FC<ExpertSandboxProps> = ({ onBack, track }) =
           </div>
 
           {/* Quick Preset Selector Bar */}
-          <div className="sandbox-presets-bar" style={{ display: 'flex', gap: '8px', padding: '10px 16px', background: '#f8fafc', borderBottom: '1px solid #e2e8f0', flexWrap: 'wrap', alignItems: 'center' }}>
-            <span style={{ fontSize: '12px', fontWeight: '700', color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+          <div className="sandbox-presets-bar">
+            <span className="sandbox-presets-label">
               Quick Presets:
             </span>
             {activeModule === 'planes' ? (

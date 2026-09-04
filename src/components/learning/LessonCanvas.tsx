@@ -227,9 +227,17 @@ export const LessonCanvas: React.FC<LessonCanvasProps> = ({
   return (
     <canvas
       ref={canvasRef}
+      className="lesson-canvas"
       width={LESSON_CONFIG.width}
       height={LESSON_CONFIG.height}
-      style={{ display: 'block', margin: '0 auto', background: 'transparent' }}
+      style={{
+        display: 'block',
+        margin: '0 auto',
+        background: 'transparent',
+        maxWidth: '100%',
+        height: 'auto',
+        touchAction: 'manipulation'
+      }}
     />
   );
 };
